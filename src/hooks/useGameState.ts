@@ -10,6 +10,8 @@ export const useGameState = () => {
     setGame(data);
   };
 
+  console.log(game);
+
   useEffect(() => {
     socket.on("update game state", handleGameState);
 

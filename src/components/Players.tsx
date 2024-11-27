@@ -5,6 +5,7 @@ import { usePlayersStore } from "../utility/store";
 
 export const Players = () => {
   const { players } = usePlayersStore();
+  console.log(players);
 
   const renderPlayers = () => {
     if (players) {

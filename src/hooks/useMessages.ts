@@ -5,6 +5,8 @@ import { socket } from "../utility/socket";
 export const useMessages = () => {
   const [messages, setMessages] = useState<MessageInterface[]>();
 
+  console.log(messages);
+
   const handleMessages = (data: MessageInterface[]) => {
     setMessages(data);
   };
